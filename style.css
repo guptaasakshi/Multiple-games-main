@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("gameimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: brightness(120%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.logo {
+    background-image: url("gaminglogo.avif");
+    background-size: cover;
+    height: 70px;
+    width: 100px;
+}
+
+.navbar .menu {
+    position: relative;
+}
+
+.menu-select {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-select:hover {
+    background-color: #555;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu-dropdown a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+}
+
+.menu-dropdown a:hover {
+    background-color: #555;
+}
+
+.menu:hover .menu-dropdown {
+    display: block;
+} 
+
+/* Main Content */
+.main-container {
+    margin: 250px 20px;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    color: rgb(254, 247, 247);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(5, 223, 248, 0.703);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(29, 76, 116);
+}
+
+/* Footer Styles */
+.footer-container {
+    height: auto;
+    padding: 5px;
+    background-color: rgb(1, 1, 30);
+    text-align: center;
+    margin-top: -20px;
+}
+
+#footer-heading {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+#move {
+    color: white;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        color: white;
+    }
+
+    .logo {
+        background-image: url("gaminglogo.avif");
+        background-size: cover;
+        height: 70px;
+        width: 100px;
+    }
+
+    .navbar .menu {
+        position: relative;
+    }
+    
+    .menu-select {
+        padding: 10px;
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .menu-select:hover {
+        background-color: #555;
+    }
+    
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #444;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .menu-dropdown a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: #444;
+    }
+    
+    .menu-dropdown a:hover {
+        background-color: #555;
+    }
+    
+    .menu:hover .menu-dropdown {
+        display: block;
+    }
+
+    .main-container {
+        margin: 250px 20px;
+    }
+    
+    h1 {
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    p {
+        color: rgb(254, 247, 247);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    button {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(5, 223, 248, 0.703);
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        color: white;
+        background-color: rgb(29, 76, 116);
+    }
+    
+    /* Footer Styles */ 
+    .footer-container {
+        height: auto;
+        padding: 15px;
+        background-color: rgb(1, 1, 30);
+        text-align: center;
+        margin-top:-100px;
+        
+    }
+    
+    #footer-heading {
+        color: white;
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #move {
+        color: white;
+        margin-top: -5px;
+    }
+}

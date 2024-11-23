@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="body">
+        <div id="highscore">High Score: 0</div>
+        <div id="scored">Score: 0</div>
+
+        <div id="board"></div>
+    </div>
+
+    <div class="controls">
+        <button class="control-btn" id="up">↑</button>
+        <div class="horizontal-controls">
+            <button class="control-btn" id="left">←</button>
+            <button class="control-btn" id="down">↓</button>
+            <button class="control-btn" id="right">→</button>
+        </div>
+    </div>
+
+    <script src="GameConstants.js"></script>
+    <script src="GameFunctions.js"></script>
+    <script src="GameLogic.js"></script>
+    <footer class="bg-dark">
+        <marquee><p>Snake: Bhai, Tu khilata reh, Mai mota hota rhunga!<br></p></marquee>
+        <p id="link"><a href="../index/index2.html">Lets Play Another Game</a></p>
+      </footer>
+</body>
+
+
+</html>

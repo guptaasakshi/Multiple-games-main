@@ -1,0 +1,190 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 60px;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 8px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page */
+.contact-container {
+    width: 80%;
+    margin: 60px auto 0; /* Adjusted margin-top for navbar overlap */
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Contact info layout */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.email-options, .links-section {
+    flex: 1;
+    font-size: 1.2em;
+    border: 1px solid #ccc; /* Added border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for spacing */
+    background-color: #f9f9f9; /* Light background */
+}
+
+.links-section p {
+    margin-top: 15px;
+}
+
+/* Links and email options styling */
+.contact-info p {
+    margin-bottom: px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Add spacing after email options and links section */
+.email-options {
+    margin-bottom: 30px; /* Space after email addresses */
+}
+
+.email-options p {
+    margin-top: 15px;
+}
+
+.links-section {
+    margin-bottom: 30px; /* Space after LinkedIn links */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 35px; /* Space above footer */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    margin: 10px 0;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 2em;
+    }
+
+    .contact-container p {
+        font-size: 1em;
+    }
+
+    .email-options, .links-section {
+        font-size: 1em;
+    }
+}

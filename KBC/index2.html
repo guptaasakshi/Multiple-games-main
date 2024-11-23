@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kaun Banega Crorepati</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="vecteezy_futuristic-and-clean-stage-blank-center-background-loop-ai_30935152.mov" type="video/mp4">
+      </video>
+    <div class="front-page">
+        <div class="overlay">
+            <h1>Welcome to Kaun Banega Crorepati</h1>
+            <p>Test your knowledge and win exciting prizes!</p>
+            <p>Click the button below to start the game.</p>
+            <button a href="../index.html" id="start-button" onclick="startGame()">Start Game</a></button>
+        </div>
+    </div>
+    <script>
+        // Function to redirect to the game page
+        function startGame() {
+            window.location.href = 'index.html'; // Change this to the actual game page URL
+        }
+    </script>
+</body>
+</html>

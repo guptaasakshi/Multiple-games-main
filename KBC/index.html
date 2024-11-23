@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBC Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="vecteezy_looped-animation-3d-rendering-with-empty-sci-fi-podium_4358231.mp4" type="video/mp4">
+      </video>
+      <audio id="background-audio" autoplay loop>
+        <source src="../KBC/script/kbc-awesome-5410.mp3" type="audio/mp3">
+      </audio>
+
+  <div class="game-container">
+    <div class="header">
+      <h1>Kaun Banega Crorepati</h1>
+    </div>
+
+    <!-- Lifelines Section -->
+    <div class="lifelines">
+      <button id="lifeline-5050" onclick="use5050()">50:50</button>
+      <button id="lifeline-audience" onclick="useAudiencePoll()">Audience Poll</button>
+      <button id="lifeline-phone" onclick="usePhoneAFriend()">Phone a Friend</button>
+    </div>
+
+    <!-- Question Section -->
+    <div class="question-container">
+      <p id="question">Question will appear here</p>
+    </div>
+
+    <!-- Options Section -->
+    <div class="options-container">
+      <button class="option" onclick="checkAnswer(this)" id="option1">A) Option 1</button>
+      <button class="option" onclick="checkAnswer(this)" id="option2">B) Option 2</button>
+      <button class="option" onclick="checkAnswer(this)" id="option3">C) Option 3</button>
+      <button class="option" onclick="checkAnswer(this)" id="option4">D) Option 4</button>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-container">
+      <p id="result"></p>
+      <p id="score">Score: ₹0</p>
+    </div>
+  </div>
+  <audio id="correct-sound" src="audio/correct_answer.mp3"></audio>
+  <audio id="wrong-sound" src="audio/wrong_answer.mp3"></audio>
+  <footer class="bg-dark">
+    <marquee><p>Author:&copy; Are you a backbencher? Prove it! <br></p></marquee>
+    <p id="link"><a href="../index/index2.html">Lets Play Another Game</a></p>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>

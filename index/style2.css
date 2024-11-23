@@ -1,0 +1,142 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url("Digital Data of Network Technology.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar styles */
+/* .navbar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end; 
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed; 
+    top: 0;/
+    z-index: 10; 
+ /* }   */
+
+ .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.navbar .menu {
+    position: relative;
+}
+
+.menu-select {
+    padding: 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1350px;
+}
+
+.menu-select:hover {
+    background-color: #555;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 1350px;
+}
+
+.menu-dropdown a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+    
+}
+
+.menu-dropdown a:hover {
+    background-color: #555;
+}
+
+.menu:hover .menu-dropdown {
+    display: block;
+} 
+
+/* Games Container */
+.games-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px; /* Adjust for space below the fixed navbar */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.games-container h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Game List for one-item-per-line */
+.game-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-item {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.game-item:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .games-container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
